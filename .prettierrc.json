@@ -1,6 +1,11 @@
 {
-	"singleQuote": true,
-	"endOfLine": "auto",
+	"trailingComma": "es5",
+	"useTabs": true,
 	"tabWidth": 2,
-	"useTabs": true
+	"semi": true,
+	"singleQuote": true,
+	"arrowParens": "always",
+	"bracketSpacing": true,
+	"proseWrap": "preserve",
+	"quoteProps": "as-needed"
 }
