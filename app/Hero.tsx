@@ -17,7 +17,7 @@ function Hero() {
 				width={160}
 			/>
 			<p className="text-dark text-center text-xs mx-20 mt-6 mb-14 sm:text-base sm:mx-48">
-				Save <span className="text-primary-400">time</span> and
+				Save <span className="text-primary-400">time</span> and{' '}
 				<span className="text-primary-400">money</span> by connecting with
 				fellow students in your campus.
 			</p>
