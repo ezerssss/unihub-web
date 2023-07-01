@@ -3,25 +3,52 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(
+			to bottom,
+			transparent,
+			rgb(var(--background-end-rgb))
+		)
+		rgb(var(--background-start-rgb));
+}
+
+.hero {
+	grid-template-areas: 'heroTitle' 'heroButton' 'heroImage' 'heroDescription';
+}
+
+@media only screen and (min-width: 1024px) {
+	.hero {
+		grid-template-areas: 'heroTitle heroImage' 'heroDescription heroImage' 'heroButton heroImage';
+		grid-template-columns: auto 288px;
+	}
+}
+
+.hero_title {
+	grid-area: heroTitle;
+}
+
+.hero_description {
+	grid-area: heroDescription;
+}
+
+.hero_button {
+	grid-area: heroButton;
+}
+
+.hero_image {
+	grid-area: heroImage;
 }
