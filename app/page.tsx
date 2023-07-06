@@ -1,6 +1,7 @@
 import Features from './Features';
 import Hero from './Hero';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 export default function Home() {
 	return (
@@ -8,6 +9,7 @@ export default function Home() {
 			<Navbar />
 			<Hero />
 			<Features />
+			<Footer />
 		</main>
 	);
 }
